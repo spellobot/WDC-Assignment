@@ -1,7 +1,7 @@
 # WDC Assignment
 
-Assignment for the *Web Development: Client* class.
-Developed by Ari and Leonardo.
+Assignment for the ***Web Development: Client*** class.
+Developed by [Ari](https://github.com/spellobot) and [Leonardo](https://github.com/0xZ1R0).
 
 ***
 
@@ -24,7 +24,7 @@ Developed by Ari and Leonardo.
 ### Structure
 
 1. **Home Page**
-  - Presentation of the project team (photographs, names, roles) and a brief introduction to the topic (e.g., the members of the group. In the absence of ideas from each student/group, the project topic could be “the thermal ingratitude of potatoes in the production of ecological fuel for aircraft [joke]”).
+  - Presentation of the project team (photographs, names, roles) and a brief introduction to the topic (e.g., the members of the group. In the absence of ideas from each student/group, he project topic could be “the thermal ingratitude of potatoes in the production of ecological fuel for aircraft (**joke**)”).
 2. **Project Page**
   - Complete description and background of the fictional project.
 3. **Partners and Investors Page**
