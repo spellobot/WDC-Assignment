@@ -57,18 +57,17 @@
                         <h3>Excerto do Código (C)</h3>
                         <p class="text-secondary">Exemplo simplificado da função de injeção:</p>
                         <div style="background-color: #000; padding: 15px; border: 1px solid #333; font-family: monospace; color: #00ff00;">
-                            <pre>
-                                void esconder_dados(char *audio, char *msg) {
-                                    int i;
-                                    for(i = 0; i < tamanho_buffer; i++) {
-                                        // Se detetar distorção alta
-                                        if(audio[i] > LIMIT_DISTORTION) {
-                                            inject_bit(audio[i], msg);
-                                        }
-                                    }
-                                    printf("Dados injetados com sucesso.\n");
-                                }
-                            </pre>
+                        <pre>
+void esconder_dados(char *audio, char *msg) {
+    int i;
+    for(i = 0; i < tamanho_buffer; i++) {
+        // Se detetar distorção alta
+        if(audio[i] > LIMIT_DISTORTION) {
+            inject_bit(audio[i], msg);
+        }
+    }
+    printf("Dados injetados com sucesso.\n");
+}</pre>
                         </div>
                     </div>
                 </div>
