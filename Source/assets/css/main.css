@@ -1,0 +1,88 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace; /* Fonte tipo terminal */
+    padding-bottom: 50px;
+}
+
+/* Barra de Navegação do Bootstrap */
+.navbar {
+    background-color: #000000 !important;
+    border-bottom: 2px solid #00ff00; /* Linha verde hacker */
+}
+
+.navbar-brand {
+    color: #00ff00 !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #00ff00 !important; /* Muda para verde ao passar o rato */
+}
+
+/* Cards */
+.card-custom {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+/* Imagens de Perfil */
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* imagem não fica esticada */
+    border-radius: 50%; /* Faz o círculo */
+    border: 3px solid #00ff00; /* Borda verde */
+    margin-bottom: 15px;
+}
+
+.btn-verde {
+    background-color: transparent;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-verde:hover {
+    background-color: #00ff00;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Formulário e Mapa */
+.input-escuro {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.mapa-container {
+    border: 2px solid #00ff00;
+}
