@@ -1,3 +1,9 @@
+/*Navegação por Teclado */
+*:focus {
+    outline: 2px dashed #00ff00; /* Borda tracejada */
+    outline-offset: 3px;
+}
+
 body {
     background-color: #121212;
     color: #e0e0e0;
@@ -86,3 +92,4 @@ footer {
 .mapa-container {
     border: 2px solid #00ff00;
 }
+
