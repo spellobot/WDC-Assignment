@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>O Projeto - Protocolo NOISE</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">_NOISE_LAB_</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="projeto.html">Projeto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="parceiros.html">Parceiros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container my-5">
+            <h2 class="text-center mb-4">Detalhes Técnicos</h2>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card-custom">
+                        <h3>O Problema e a Solução</h3>
+                        <p>Em situações onde a internet é bloqueada, precisamos de formas alternativas de comunicação. O Protocolo NOISE utiliza a <strong>esteganografia</strong> (arte de esconder mensagens) em ficheiros de áudio.</p>
+                        <p>Escolhemos o <strong>Heavy Metal e Punk</strong> porque a distorção natural das guitarras cria "ruído" suficiente para escondermos dados encriptados sem que o ouvido humano perceba a diferença.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card-custom h-100">
+                        <h3>Metodologia</h3>
+                        <ul>
+                            <li><strong>Linguagem:</strong> C (para performance máxima).</li>
+                            <li><strong>Criptografia:</strong> AES-256 antes da injeção no áudio.</li>
+                            <li><strong>Frequência:</strong> Dados inseridos acima de 18kHz.</li>
+                            <li><strong>Plataforma:</strong> Desenvolvido e testado em Arch Linux.</li>
+                        </ul>
+                        <p>O algoritmo analisa o ficheiro .WAV e procura picos de volume para inserir os bits da mensagem secreta.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-custom h-100">
+                        <h3>Excerto do Código (C)</h3>
+                        <p class="text-secondary">Exemplo simplificado da função de injeção:</p>
+                        <div style="background-color: #000; padding: 15px; border: 1px solid #333; font-family: monospace; color: #00ff00;">
+                            <pre>
+                                void esconder_dados(char *audio, char *msg) {
+                                    int i;
+                                    for(i = 0; i < tamanho_buffer; i++) {
+                                        // Se detetar distorção alta
+                                        if(audio[i] > LIMIT_DISTORTION) {
+                                            inject_bit(audio[i], msg);
+                                        }
+                                    }
+                                    printf("Dados injetados com sucesso.\n");
+                                }
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card-custom text-center">
+                        <h3>Próximos Passos</h3>
+                        <p>Queremos criar uma aplicação Android (FOSS) para descodificar as mensagens automaticamente usando o microfone do telemóvel.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Protocolo NOISE - Trabalho Académico</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
