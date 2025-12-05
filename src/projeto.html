@@ -61,7 +61,7 @@
                         <pre>
 void esconder_dados(char *audio, char *msg) {
     int i;
-    for(i = 0; i < tamanho_buffer; i++) {
+    for(i = 0; i &lt; tamanho_buffer; i++) {
         // Se detetar distorção alta
         if(audio[i] > LIMIT_DISTORTION) {
             inject_bit(audio[i], msg);
